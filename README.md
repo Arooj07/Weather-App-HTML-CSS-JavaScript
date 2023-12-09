@@ -1,5 +1,5 @@
 # Weather-App-HTML-CSS-
-Design a Web App name Weather App using HTML/CSS - Froontend Development
+Design a Web App name Weather App using HTML/CSS - Frontend Development
 As a Web Developer, I designed a single page Weather App to present the current forecast of selected city.
 In this project, I only use HTML and CSS that includes;
 1. HTML Elements
