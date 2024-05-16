@@ -1,7 +1,5 @@
 # Weather-App-HTML-CSS-JavaScript
-Design a Web App name Weather App using HTML/CSS - Frontend Development
-As a Web Developer, I designed a single page Weather App to present the current forecast of selected city.
-In this project, I only use HTML and CSS that includes;
+As a web developer, I crafted a Weather App utilizing HTML, CSS, and JavaScript, focusing on frontend development. The single-page application allows users to select a city and view its current forecast. Leveraging HTML elements and attributes, along with CSS styling for aesthetic appeal, I designed various containers to display temperature and city information. JavaScript functions power the interaction, updating data dynamically when users input their city details and press the button. The project includes;
 1. HTML Elements
 2. HTML Attributes
 3. CSS Selectors
