@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <style>
-        body{
-            text-align: center;
-            font-family: sans-serif;
-        }
-        .text1{
-            color: blue;
-            font-size: 30px;
-        }
-        .text2{
-            font-size: 25px;
-            font-weight: normal;
-        }
-       
-        .FirstBlock{
-            margin:10px 520px;
-            padding: 20px 0px;
-            transition: all 200ms ease-in-out;
-            
-        }
-        .text3{
-            font-family: sans-serif;
-            color: #A1ACB2;
-            font-weight: normal;
-        }
-        .FirstBlock:hover{
-            background-color: #FAE7C9;
+      body {
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .text1 {
+        color: blue;
+        font-size: 30px;
+      }
+      .text2 {
+        font-size: 25px;
+        font-weight: normal;
+      }
 
-        }
-        button{
-            padding: 20px 40px;
-            border: 1px solid blue;
-            border-radius: 40px;
-            box-shadow: 5px 5px 10px rgba(0, 0,0, 0.3);
-            color: white;
-            font-size: 20px;
-            background-color: blue;
-            transition: all 200ms ease-in-out;
-
-
-        }
-        button:hover{
-            background-color: red;
-            cursor: pointer;
-        }
-        p{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #A1ACB2;
-        }
-
-
-    
+      .FirstBlock {
+        margin: 10px 520px;
+        padding: 20px 0px;
+        transition: all 200ms ease-in-out;
+      }
+      .text3 {
+        font-family: sans-serif;
+        color: #a1acb2;
+        font-weight: normal;
+      }
+      .FirstBlock:hover {
+        background-color: #fae7c9;
+      }
+      button {
+        padding: 20px 40px;
+        border: 1px solid blue;
+        border-radius: 40px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 20px;
+        background-color: blue;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #a1acb2;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <h1>🌤️</h1>
-        <h2 class="text1">
-            Currently 21° in Tokyo
-        </h2>
-        <h3 class="text2">
-            13° <strong>/23°</strong>
-        </h3>
-        <h4 class="FirstBlock">
-            🌧️ Tommorow 
-        <div class="text3">10°  <strong>/ 22°</strong></div> </h4>
-        <h4 class="FirstBlock">
-            🌤️ Saturday
-            <div class="text3">15° <strong>/ 17°</strong></div>
-        </h4>
-        <h4 class="FirstBlock">
-            ☀️ Sunday
-            <div class="text3">25° <strong>/ 28°</strong></div>
-        </h4>
-        <button>
-            Change City
-        </button>
-        <p>Coded by Arooj Latif</p>
- 
-       
-        
-       
+      <h1>🌤️</h1>
+      <h2 class="text1">Currently 21° in Tokyo</h2>
+      <h3 class="text2">13° <strong>/23°</strong></h3>
+      <h4 class="FirstBlock">
+        🌧️ Tommorow
+        <div class="text3">10° <strong>/ 22°</strong></div>
+      </h4>
+      <h4 class="FirstBlock">
+        🌤️ Saturday
+        <div class="text3">15° <strong>/ 17°</strong></div>
+      </h4>
+      <h4 class="FirstBlock">
+        ☀️ Sunday
+        <div class="text3">25° <strong>/ 28°</strong></div>
+      </h4>
+      <button>Change City</button>
+      <p>Coded by Arooj</p>
     </div>
-</body>
+    <script>
+      function temperatureData() {
+        let temperature = prompt("What is current Temperature?");
+        let city = prompt("Where do you live?");
+        if (temperature >= 0) {
+          let heading1 = document.querySelector("h1");
+          heading1.innerHTML = "😊";
+          let heading2 = document.querySelector("h2");
+          heading2.innerHTML = "Currently " + temperature + "° in " + city;
+        } else {
+          let heading1 = document.querySelector("h1");
+          heading1.innerHTML = "🥶";
+          let heading2 = document.querySelector("h2");
+          heading2.innerHTML = "Currently " + temperature + "° in " + city;
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", temperatureData);
+    </script>
+  </body>
 </html>
