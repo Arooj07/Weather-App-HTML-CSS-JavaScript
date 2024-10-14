@@ -17,5 +17,4 @@ As a web developer, I crafted a Weather App utilizing HTML, CSS, and JavaScript,
 15. JavaScript Event
 
 
-![image](https://github.com/Arooj07/Weather-App-HTML-CSS-/assets/100277795/1331110a-73ab-4b19-bddd-1cdbd7add4a2)
 
